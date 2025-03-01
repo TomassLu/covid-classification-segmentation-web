@@ -28,7 +28,8 @@ Javascript: axios, react (the javascript frontend was built with create-react-ap
 The same as covid-classification-segmentation three models were trained: densenet201 for image classification and 2 unets for lung and infection segmentation (for densenet batch size used - 16, for unets - 8, optimizer - adam)
 The handleFileChange on changes select image and handleUpload uses axios to transfer it to the backend (through upload_image '/upload') where the image is then saved to file
 The models are used on the input image
-THe results are set into matplot and saved as image (matplot uses 'agg' for stable working in backend)
+THe results are set into matplot and saved as image 
+('matplotlib.use('agg') was used to fix matplot instability when used in backend)
 The generated result image is transfered to frontend (through get_result_image '/results/<filename>')
 
 # Data used
