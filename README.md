@@ -22,7 +22,7 @@ The result will be displayed at the bottom
 # Libraries used
 Python: Tensorflow, keras, matplot, numpy, cv2, os, flask
 Javascript: axios, react (the javascript frontend was built with create-react-app)
-(Tensorflow and keraas versions - 2.13)
+(Tensorflow and keras versions - 2.13)
 
 # Used method info
 The same as covid-classification-segmentation three models were trained: densenet201 for image classification and 2 unets for lung and infection segmentation (for densenet batch size used - 16, for unets - 8, optimizer - adam)
